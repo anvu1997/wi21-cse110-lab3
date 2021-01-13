@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Lab 2</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSE 110</h1>
+        <h2>Lab 2</h2>
+        <h3>Kenneth Chen</h3>
+    </header>
+
+    <main>
+        <section>
+            <p>Hi my <i>name</i> is <em>Kenneth Chen</em> I'm a <strong>2nd year</strong> <code>CS</code> student.</p>
+            <br />
+
+            <div>
+                <figure>
+                    <img src="/me.jpg" alt="is me" width="30%">
+                    <figcaption>That's me: <span class="fab-txt">Kenneth</span></figcaption>
+                </figure>
+            </div>
+
+            <p>You should checkout my <a href="https://www.efeichen.me">personal website</a></p>
+            <hr />
+            <p>On another note, here is a list of my favorite food:</p>
+            <ol>
+                <li><b>Ramen</b></li>
+                <li>
+                    <pre>Steak</pre>
+                </li>
+            </ol>
+        </section>
+
+        <picture>
+            <source srcset="mejpg" media="(min-width: 800px)">
+            <img src="me.jpg" alt="" />
+        </picture>
+    </main>
+
+    <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe>
+
+    <video controls width="250">
+        <source src="flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <audio controls src="t-rex-roar.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+    </audio>
+
+    <canvas id="my-canvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+        <circle cx="50" cy="50" r="40" />
+    </svg>
+
+    <aside>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Work</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>
+        Made with love by Kenneth
+    </footer>
+</body>
+
+</html>
