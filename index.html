@@ -20,12 +20,10 @@
             <p>Hi my <i>name</i> is <em>Kenneth Chen</em> I'm a <strong>2nd year</strong> <code>CS</code> student.</p>
             <br />
 
-            <div>
-                <figure>
-                    <img src="/me.jpg" alt="is me" width="30%">
-                    <figcaption>That's me: <span class="fab-txt">Kenneth</span></figcaption>
-                </figure>
-            </div>
+            <figure>
+                <img src="/me.jpg" alt="is me" width="30%">
+                <figcaption>That's me: <span class="fab-txt">Kenneth</span></figcaption>
+            </figure>
 
             <p>You should checkout my <a href="https://www.efeichen.me">personal website</a></p>
             <hr />
@@ -63,6 +61,113 @@
     <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
         <circle cx="50" cy="50" r="40" />
     </svg>
+
+    <form action="" method="get">
+        <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required>
+
+        </div>
+        <div>
+            <label for="dino-select">Choose your favorite food</label>
+            <select id="dino-select">
+                <optgroup label="Fruit">
+                    <option>Apple</option>
+                    <option>Orange</option>
+                </optgroup>
+                <optgroup label="Meat">
+                    <option>Beef</option>
+                    <option>Chicken</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>When do you want to receive the letter?</legend>
+
+                <input type="radio" id="monday" name="day">
+                <label for="monday">Monday</label><br />
+
+                <input type="radio" id="wednesday" name="day">
+                <label for="wednesday">Wednesday</label><br />
+
+                <input type="radio" id="friday" name="day">
+                <label for="friday">Friday</label>
+            </fieldset>
+
+        </div>
+        <div>
+            <label for="ice-cream-choice">Favorite cake flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate">
+                <option value="Coconut">
+                <option value="Mint">
+                <option value="Strawberry">
+                <option value="Vanilla">
+            </datalist>
+        </div>
+        <div>
+            <label for="story">Why do you want to subscribe to our newsletter</label>
+
+            <textarea id="story" name="story" rows="5" cols="33">
+                I want to subscribe because...
+            </textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label for="scales">Scales</label>
+        </div>
+        <div>
+            <input type="color" id="head" name="head" value="#e66465">
+            <label for="head">Head</label>
+        </div>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+        <input type="range" id="volume" name="volume" min="0" max="11">
+        <div>
+            <input type="submit" value="Subscribe to my newsletter">
+        </div>
+    </form>
+
+    <table>
+        <caption>My class schedule</caption>
+        <colgroup>
+            <col>
+            <col span="2">
+            <col span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">CSE 110</th>
+                <th scope="col">CSE 101</th>
+                <th scope="col">CSE 170</th>
+                <th scope="col">COGS 123</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Time</th>
+                <td>9 AM</td>
+                <td>10 AM</td>
+                <td>11 AM</td>
+                <td>12 PM</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <details>
+        <summary>My secret</summary>
+        I love dogs.
+    </details>
+
+    <button type="button">Nice!!</button>
+
+    <template>
+        <div>Here's some HTML that's in a template!</div>
+    </template>
 
     <aside>
         <nav>
