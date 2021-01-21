@@ -132,6 +132,7 @@ ol {
     display: grid;
     grid-template-columns: 25% 50px auto 50px 40px;
     grid-template-rows: 25% 50px auto;
+    margin: 0 auto;
 }
 
 ol li {
